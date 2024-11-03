@@ -4,6 +4,7 @@ import Dashboard from './components/Dashboard';
 import Home from './components/Home';
 import About from './components/About';
 import Navbar from './components/Navbar';
+import Params from './components/Params';
 
 function App() {
   const router = createBrowserRouter(
@@ -30,6 +31,14 @@ function App() {
         <div>
           <Navbar/>
           <Dashboard/>
+        </div>
+      },
+      {
+        path: '/student/:id',
+        element: 
+        <div>
+          <Navbar/>
+          <Params/>
         </div>
       }
     ]
