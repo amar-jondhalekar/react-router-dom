@@ -3,7 +3,6 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Dashboard from './components/Dashboard';
 import Home from './components/Home';
 import About from './components/About';
-import Dashboard from './components/Dashboard';
 
 function App() {
   const router = createBrowserRouter(
