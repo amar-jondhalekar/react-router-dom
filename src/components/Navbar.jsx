@@ -11,6 +11,7 @@ const Navbar = () => {
             Home
           </NavLink> 
         </li>
+        <</>
         <li>
           <NavLink to="/about" className={({ isActive }) => (isActive ? "active-link" : "")}>
             About
