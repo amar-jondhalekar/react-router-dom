@@ -8,6 +8,7 @@ import Params from './components/Params';
 import MockTest from './components/MockTest';
 import Reports from './components/Reports';
 import Courses from './components/Courses';
+import NotFound from './components/NotFound';
 
 function App() {
   const router = createBrowserRouter(
@@ -59,6 +60,10 @@ function App() {
           <Navbar/>
           <Params/>
         </div>
+      },
+      {
+        path: '*',
+        element: <NotFound/>
       }
     ]
   );
