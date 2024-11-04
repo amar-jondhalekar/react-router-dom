@@ -37,7 +37,7 @@ function App() {
         </div>,
         children:[
           {
-            path:'/courses',
+            path:'courses',
             element: <Courses/>
           },
           {
@@ -45,7 +45,7 @@ function App() {
             element: <MockTest/>
           },
           {
-            path: '/reports',
+            path: 'reports',
             element: <Reports/>
           }
         ]
