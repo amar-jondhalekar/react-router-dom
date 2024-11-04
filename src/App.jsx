@@ -52,7 +52,7 @@ function App() {
         ]
       },
       {
-        //when we write linke : www.coffeewithamar.in/id=abcd this is Query Parameter 
+        //when we write : www.coffeewithamar.in/id=abcd this is Query Parameter 
         // This is Route Parameter 
         path: '/student/:id',
         element: 
