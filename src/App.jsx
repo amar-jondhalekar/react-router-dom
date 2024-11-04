@@ -5,6 +5,9 @@ import Home from './components/Home';
 import About from './components/About';
 import Navbar from './components/Navbar';
 import Params from './components/Params';
+import MockTest from './components/MockTest';
+import Reports from './components/Reports';
+import Courses from './components/Courses';
 
 function App() {
   const router = createBrowserRouter(
@@ -31,7 +34,21 @@ function App() {
         <div>
           <Navbar/>
           <Dashboard/>
-        </div>
+        </div>,
+        children:[
+          {
+            path:'/courses',
+            element: <Courses/>
+          },
+          {
+            path:'mock-tests',
+            element: <MockTest/>
+          },
+          {
+            path: '/reports',
+            element: <Reports/>
+          }
+        ]
       },
       {
         //when we write linke : www.coffeewithamar.in/id=abcd this is Query Parameter 
